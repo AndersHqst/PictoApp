@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CA81AAE1B22F22800F83239 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AAD1B22F22800F83239 /* main.m */; };
+		4CA81AB11B22F22800F83239 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AB01B22F22800F83239 /* AppDelegate.m */; };
+		4CA81AB41B22F22800F83239 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AB31B22F22800F83239 /* ViewController.m */; };
+		4CA81AB71B22F22800F83239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA81AB51B22F22800F83239 /* Main.storyboard */; };
+		4CA81AB91B22F22800F83239 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA81AB81B22F22800F83239 /* Images.xcassets */; };
+		4CA81ABC1B22F22800F83239 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA81ABA1B22F22800F83239 /* LaunchScreen.xib */; };
+		4CA81AC81B22F22800F83239 /* PictoappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AC71B22F22800F83239 /* PictoappTests.m */; };
+		4CA81AD51B22F24700F83239 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AD21B22F24700F83239 /* ClockView.m */; };
+		4CA81ADA1B22F25100F83239 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA81AD91B22F25100F83239 /* UIColor+Additions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CA81AC21B22F22800F83239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA81AA01B22F22800F83239 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CA81AA71B22F22800F83239;
+			remoteInfo = Pictoapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CA81AA81B22F22800F83239 /* Pictoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA81AAC1B22F22800F83239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA81AAD1B22F22800F83239 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CA81AAF1B22F22800F83239 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CA81AB01B22F22800F83239 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CA81AB21B22F22800F83239 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CA81AB31B22F22800F83239 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CA81AB61B22F22800F83239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CA81AB81B22F22800F83239 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CA81ABB1B22F22800F83239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4CA81AC11B22F22800F83239 /* PictoappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictoappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA81AC61B22F22800F83239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA81AC71B22F22800F83239 /* PictoappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictoappTests.m; sourceTree = "<group>"; };
+		4CA81AD11B22F24700F83239 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		4CA81AD21B22F24700F83239 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		4CA81AD71B22F25100F83239 /* TimeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDelegate.h; sourceTree = "<group>"; };
+		4CA81AD81B22F25100F83239 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		4CA81AD91B22F25100F83239 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CA81AA51B22F22800F83239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA81ABE1B22F22800F83239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CA81A9F1B22F22800F83239 = {
+			isa = PBXGroup;
+			children = (
+				4CA81AAA1B22F22800F83239 /* Pictoapp */,
+				4CA81AC41B22F22800F83239 /* PictoappTests */,
+				4CA81AA91B22F22800F83239 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CA81AA91B22F22800F83239 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CA81AA81B22F22800F83239 /* Pictoapp.app */,
+				4CA81AC11B22F22800F83239 /* PictoappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CA81AAA1B22F22800F83239 /* Pictoapp */ = {
+			isa = PBXGroup;
+			children = (
+				4CA81AD71B22F25100F83239 /* TimeDelegate.h */,
+				4CA81AD81B22F25100F83239 /* UIColor+Additions.h */,
+				4CA81AD91B22F25100F83239 /* UIColor+Additions.m */,
+				4CA81AD11B22F24700F83239 /* ClockView.h */,
+				4CA81AD21B22F24700F83239 /* ClockView.m */,
+				4CA81AAF1B22F22800F83239 /* AppDelegate.h */,
+				4CA81AB01B22F22800F83239 /* AppDelegate.m */,
+				4CA81AB21B22F22800F83239 /* ViewController.h */,
+				4CA81AB31B22F22800F83239 /* ViewController.m */,
+				4CA81AB51B22F22800F83239 /* Main.storyboard */,
+				4CA81AB81B22F22800F83239 /* Images.xcassets */,
+				4CA81ABA1B22F22800F83239 /* LaunchScreen.xib */,
+				4CA81AAB1B22F22800F83239 /* Supporting Files */,
+			);
+			path = Pictoapp;
+			sourceTree = "<group>";
+		};
+		4CA81AAB1B22F22800F83239 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA81AAC1B22F22800F83239 /* Info.plist */,
+				4CA81AAD1B22F22800F83239 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CA81AC41B22F22800F83239 /* PictoappTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CA81AC71B22F22800F83239 /* PictoappTests.m */,
+				4CA81AC51B22F22800F83239 /* Supporting Files */,
+			);
+			path = PictoappTests;
+			sourceTree = "<group>";
+		};
+		4CA81AC51B22F22800F83239 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA81AC61B22F22800F83239 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CA81AA71B22F22800F83239 /* Pictoapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA81ACB1B22F22800F83239 /* Build configuration list for PBXNativeTarget "Pictoapp" */;
+			buildPhases = (
+				4CA81AA41B22F22800F83239 /* Sources */,
+				4CA81AA51B22F22800F83239 /* Frameworks */,
+				4CA81AA61B22F22800F83239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pictoapp;
+			productName = Pictoapp;
+			productReference = 4CA81AA81B22F22800F83239 /* Pictoapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CA81AC01B22F22800F83239 /* PictoappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA81ACE1B22F22800F83239 /* Build configuration list for PBXNativeTarget "PictoappTests" */;
+			buildPhases = (
+				4CA81ABD1B22F22800F83239 /* Sources */,
+				4CA81ABE1B22F22800F83239 /* Frameworks */,
+				4CA81ABF1B22F22800F83239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CA81AC31B22F22800F83239 /* PBXTargetDependency */,
+			);
+			name = PictoappTests;
+			productName = PictoappTests;
+			productReference = 4CA81AC11B22F22800F83239 /* PictoappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CA81AA01B22F22800F83239 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Høst IT";
+				TargetAttributes = {
+					4CA81AA71B22F22800F83239 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					4CA81AC01B22F22800F83239 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 4CA81AA71B22F22800F83239;
+					};
+				};
+			};
+			buildConfigurationList = 4CA81AA31B22F22800F83239 /* Build configuration list for PBXProject "Pictoapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CA81A9F1B22F22800F83239;
+			productRefGroup = 4CA81AA91B22F22800F83239 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CA81AA71B22F22800F83239 /* Pictoapp */,
+				4CA81AC01B22F22800F83239 /* PictoappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CA81AA61B22F22800F83239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA81AB71B22F22800F83239 /* Main.storyboard in Resources */,
+				4CA81ABC1B22F22800F83239 /* LaunchScreen.xib in Resources */,
+				4CA81AB91B22F22800F83239 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA81ABF1B22F22800F83239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CA81AA41B22F22800F83239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA81AB41B22F22800F83239 /* ViewController.m in Sources */,
+				4CA81AD51B22F24700F83239 /* ClockView.m in Sources */,
+				4CA81AB11B22F22800F83239 /* AppDelegate.m in Sources */,
+				4CA81AAE1B22F22800F83239 /* main.m in Sources */,
+				4CA81ADA1B22F25100F83239 /* UIColor+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA81ABD1B22F22800F83239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA81AC81B22F22800F83239 /* PictoappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CA81AC31B22F22800F83239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CA81AA71B22F22800F83239 /* Pictoapp */;
+			targetProxy = 4CA81AC21B22F22800F83239 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CA81AB51B22F22800F83239 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CA81AB61B22F22800F83239 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CA81ABA1B22F22800F83239 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CA81ABB1B22F22800F83239 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CA81AC91B22F22800F83239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CA81ACA1B22F22800F83239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA81ACC1B22F22800F83239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pictoapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CA81ACD1B22F22800F83239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pictoapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4CA81ACF1B22F22800F83239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PictoappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictoapp.app/Pictoapp";
+			};
+			name = Debug;
+		};
+		4CA81AD01B22F22800F83239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PictoappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictoapp.app/Pictoapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CA81AA31B22F22800F83239 /* Build configuration list for PBXProject "Pictoapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA81AC91B22F22800F83239 /* Debug */,
+				4CA81ACA1B22F22800F83239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CA81ACB1B22F22800F83239 /* Build configuration list for PBXNativeTarget "Pictoapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA81ACC1B22F22800F83239 /* Debug */,
+				4CA81ACD1B22F22800F83239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CA81ACE1B22F22800F83239 /* Build configuration list for PBXNativeTarget "PictoappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA81ACF1B22F22800F83239 /* Debug */,
+				4CA81AD01B22F22800F83239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CA81AA01B22F22800F83239 /* Project object */;
+}
