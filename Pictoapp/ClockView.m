@@ -46,7 +46,8 @@ float offset = 60;
     float clock_hour_X = -sinf(M_PI * hourDegree / 180);
     float x = [self center].x + (clock_hour_X * ([self dimension] - offset));
     float y = [self center].y - (clock_hour_Y * ([self dimension] - offset));
-    CGContextFillEllipseInRect(context, CGRectMake(x, y, 17, 17));
+    float dotRadius = 20;
+    CGContextFillEllipseInRect(context, CGRectMake(x-dotRadius/2, y-dotRadius/2, dotRadius, dotRadius));
     
     //Center of clock arm
     CGContextSetLineWidth(context, 14);
@@ -70,5 +71,9 @@ float offset = 60;
     
     //Apply our stroke settings to the line.
     CGContextStrokePath(context);
+    
+    // Blck pin dot in the center
+    CGContextSetFillColorWithColor(context, [self.delegate backgroundColor].CGColor);
+    CGContextFillEllipseInRect(context, CGRectMake(self.center.x-.5, self.center.y-.5, 1, 1));
 }
 @end

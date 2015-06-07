@@ -26,10 +26,8 @@
     return YES;
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    NSLog(@"view will appear");
-    
+-(void)viewDidLoad {
+    [super viewDidLoad];
     
 //    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"hej far igen" message:@"mere besked" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil];
 //    [av show];
@@ -43,8 +41,8 @@
     [self.clockView setNeedsDisplay];
     self.view.backgroundColor = [UIColor redColor];
     backgroundColor = [UIColor picto_black];
-//    UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
-//    [self.view addGestureRecognizer:tgr];
+    UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [self.view addGestureRecognizer:tgr];
 }
 
 -(UIColor *)backgroundColor{
@@ -57,15 +55,23 @@
     return YES;
 }
 
--(void)tap:(id)sender{
-    if(self.palette.frame.origin.y == 380){
+-(void)tap:(id)sender {
+    if(self.palette.hidden){
         [UIView animateWithDuration:0.25 animations:^(){
-            self.palette.frame = CGRectMake(0, 480, self.palette.frame.size.width, 100);
+            self.palette.hidden = NO;
+            self.palette.frame = CGRectMake(self.palette.frame.origin.x, self.view.frame.size.height - self.palette.frame.size.height - 10, self.palette.frame.size.width, self.palette.frame.size.height);
+        } completion:^(BOOL isFinished){
+            if(isFinished) {
+            }
         }];
     }
-    else{
+    else {
         [UIView animateWithDuration:0.25 animations:^(){
-            self.palette.frame = CGRectMake(0, 380, self.palette.frame.size.width, 100);
+            self.palette.frame = CGRectMake(self.palette.frame.origin.x, self.view.frame.size.height, self.palette.frame.size.width, self.palette.frame.size.height);
+        } completion:^(BOOL finished) {
+            if(finished){
+                self.palette.hidden = YES;
+            }
         }];
     }
 }
@@ -80,11 +86,22 @@
 
 - (void)pollTime:(CADisplayLink *)displayLink {
 //    NSLog(@"View hours: %d min: %d sec: %d", [self hour], [self minute], [self second]);
-    int old = [self second];
-    now = [[NSDate alloc] init];
-    if(old != [self second]) {
+    
+    
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:( NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:[NSDate date]];
+    [components setHour:12];
+    [components setMinute:0];
+    now = [calendar dateFromComponents:components];
+    
+//    NSLog(@"date d: %@", todayAt6PM);
+    
+//    int old = [self second];
+//    now = [[NSDate alloc] init];
+//    if(old != [self second]) {
         [self.clockView setNeedsDisplay];
-    }
+//    }
 }
 
 -(int)milliseconds{
@@ -135,7 +152,9 @@
 
 -(UIView *)palette{
     if(!palette){
-        palette = [[UIView alloc] initWithFrame:CGRectMake(0, 480, self.view.frame.size.width, 150)];
+        palette = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 80)];
+        palette.hidden = YES;
+        palette.center = CGPointMake(self.view.center.x, self.view.frame.size.height);
         [palette setBackgroundColor:[UIColor clearColor]];
         [self.view addSubview:palette];
         [self addPaletteButtons];
@@ -145,13 +164,15 @@
 
 -(void)colorButtonTap:(UIButton *)sender{
     backgroundColor = [self buttonColorForTag:(int)sender.tag];
+    self.view.backgroundColor = backgroundColor;
     [self.clockView setNeedsDisplay];
 }
 
 -(void)addPaletteButtons{
+    int buttonIndent = self.view.frame.size.width / 2 - (2*40) - 0.5 * 40;
     for (int i = 0; i < 5; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(50 + (i * 40), 5, 35, 35);
+        btn.frame = CGRectMake(buttonIndent + (i * 40), 5, 35, 35);
         btn.tag = i;
         [btn setBackgroundColor:[self buttonColorForTag:i]];
         [btn addTarget:self action:@selector(colorButtonTap:) forControlEvents:UIControlEventTouchUpInside];
@@ -159,7 +180,7 @@
     }
     for (int i = 0; i < 5; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(50 + i * 40, 45, 35, 35);
+        btn.frame = CGRectMake(buttonIndent + i * 40, 45, 35, 35);
         btn.tag = i + 5;
         [btn setBackgroundColor:[self buttonColorForTag:i + 5]];
         [btn addTarget:self action:@selector(colorButtonTap:) forControlEvents:UIControlEventTouchUpInside];
